@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-style: italic;
+}
+html{
+    scroll-behavior: unset !important;
+}
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+      scroll-behavior: unset !important;
+    }
+  }
+body{
+    height: 2000px;
+    scroll-behavior: unset;
+}
+.up-icon{
+    width: fit-content;
+    right: 4px;
+    bottom: 0;
+}
+.box-contant{
+    top: 0%;
+    left: -256px;
+    z-index:6666666666;
+    display: flex;
+    align-items: center;
+}
+.header{
+    background-image: url("../pexels-sebastian-ervi-1763075.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.accord{
+    width: 16rem;
+    height: 100vh;
+    text-transform: capitalize;
+    font-style: normal;
+}
+.links{
+    transform: translateY(40%);
+}
+.links a{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 1.5rem;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.links a:hover,.icon i:hover{
+    color: crimson;
+}
+.open{
+  height: fit-content;
+}
+.header-contant h1{
+ font-size: 3.5rem;
+}
+.details{
+    margin:5rem auto;
+}
+.singer{
+   background-color: #cccccc!important;
+}
+.singer h2{
+   background-color: #d62e3399 !important;  
+   margin-bottom: 0%; 
+   cursor: pointer;
+}
+.singer p{
+    margin-bottom: 0%; 
+    display: none; 
+}
+.duration{
+    background-image: url("../invitation-2508607__340.jpg");
+    background-size: cover;
+    height: 18rem;
+}
+.duration-box{
+    width: 23%;
+    height:30%;
+    margin-left: 5px;
+    margin-top: 5rem;
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid #fff;
+}
+.contact{
+    margin-top: 15%;
+}
+.info{
+    color: #646363;
+}
+form input{
+    margin: 1rem 0;
+}
+.form-control{
+   padding: .8rem;
+}
+.fa-brands{
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+p span{
+    color: brown;
+}
+.fa-brands:hover{
+    color: brown;
+}
