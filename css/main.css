@@ -13,13 +13,13 @@ html{
     }
   }
 body{
-    height: 2000px;
     scroll-behavior: unset;
 }
 .up-icon{
     width: fit-content;
     right: 4px;
     bottom: 0;
+    opacity: 0;
 }
 .box-contant{
     top: 0%;

@@ -1,3 +1,6 @@
+$(document).ready(function(){
+  $("body,html").animate({scrollTop:0});
+});
 let widthAccord = $(".accord").outerWidth();
  $('.open').css("left",'0px')
 $('.open i').click(function(){
@@ -14,8 +17,9 @@ $('.open i').click(function(){
 
     })
 })
-
-
+$(".links a,.header").click( function(){
+  $(".box-contant").animate({"left":-widthAccord},1700);
+})
 
 //------ siblings accordion-----------//
 $('.singer h2').click(function(){
@@ -38,15 +42,13 @@ $('.singer h2').click(function(){
     document.getElementById("count4").innerHTML= days.getSeconds()
  });
  ////////
- $(".up-icon").fadeOut();
  let detailsOffset = $(".details ").offset().top;
  $(window).scroll(function(){
    if ($(window).scrollTop() >= detailsOffset) {
-    $(".up-icon").fadeIn(2000);
+    $(".up-icon").css({'opacity':'1','transitionDuration':'3s'});
    }
    else{
-    $(".up-icon").fadeOut(2000);
-
+    $(".up-icon").css({'opacity':'0','transitionDuration':'3s'});
    }
  });
  $(".up-icon").click(function(){
@@ -57,7 +59,7 @@ $('.singer h2').click(function(){
   let currentHref = $(this).attr('href');
   let currentSet = $(currentHref).offset().top;
   $("body,html").animate({scrollTop:currentSet},2000)
- })
+ });
  ///// rejax
  let nameInput =document.getElementById('names');
  let emailInput =document.getElementById('Email');
@@ -82,6 +84,5 @@ $('.singer h2').click(function(){
   }else{
     emailInput.classList.add('is-invalid');
     emailInput.classList.remove('is-valid');
-
   }
- }
+ };
